@@ -1,0 +1,40 @@
+package Bank;
+
+public class Account {
+
+	private String accountNo;
+	private int balance;
+	private int customerID;
+
+	public Account() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Account(String accountNo, int balance, int customerID) {
+		super();
+		this.accountNo = accountNo;
+		this.balance = balance;
+		this.customerID = customerID;
+	}
+
+	public String getAccountNo() {
+		return accountNo;
+	}
+	public void setAccountNo(String accountNo) {
+		this.accountNo = accountNo;
+	}
+	public int getCustomerID() {
+		return customerID;
+	}
+	public void setCustomerID(int customerID) {
+		this.customerID = customerID;
+	}
+	public int getBalance() {
+		return this.balance;
+	}
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+	
+}

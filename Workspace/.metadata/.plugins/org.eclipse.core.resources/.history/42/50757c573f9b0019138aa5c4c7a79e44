@@ -1,0 +1,33 @@
+package Bank;
+
+public class Customer {
+private int id;
+private String name;
+private String address;
+private int accountNo;
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getAddress() {
+	return address;
+}
+public void setAddress(String address) {
+	this.address = address;
+}
+public int getAccountNo() {
+	return accountNo;
+}
+public void setAccountNo(int accountNo) {
+	this.accountNo = accountNo;
+}
+
+}

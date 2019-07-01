@@ -1,0 +1,16 @@
+package Bank;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Bank bank1 = new Bank(1, "VietComBank", "Hanoi");
+		// Create account  and customer for bank 1;
+		List<Account> accounts1 = new ArrayList<Account>();
+		List<Customer> customers1 = new ArrayList<Customer>();
+	}
+
+}

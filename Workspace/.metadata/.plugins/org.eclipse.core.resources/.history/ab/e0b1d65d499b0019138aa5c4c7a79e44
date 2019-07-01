@@ -1,0 +1,40 @@
+package Bank;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		//Create bank;
+		print("Tao ngan hang 1: ");
+		Scanner scanner = new Scanner(System.in);
+		
+		print("nhap ten ngan hang: ");
+		String bankName = scanner.nextLine();
+		print("nhap ID ngan hang: ");
+		int id = scanner.nextInt();
+		print("nhap dia chi: ");
+		String address = scanner.nextLine();
+		Bank bank1 = new Bank(id, bankName, address);
+		
+		print(bank1.getBankID()+ " , " +bank1.getName() +" , " + bank1.getLocation());
+		
+		// Create account  and customer for bank 1;
+		List<Account> accounts1 = new ArrayList<Account>();
+		List<Customer> customers1 = new ArrayList<Customer>();
+		
+		
+	}
+	public static void print(int i) {
+		System.out.println(i);
+	}
+	public static void print(String s) {
+		System.out.println(s);
+	}
+
+}

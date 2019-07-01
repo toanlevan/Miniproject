@@ -1,0 +1,20 @@
+package Bank;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Bank bank1 = new Bank(1, "VietComBank", "Hanoi");
+		// Create account for bank 1;
+		List<Account> account1 = new ArrayList<Account>();
+		for(int i=0; i<10; i++) {
+			Account a= new Account(i,0,i)  ;
+			account1.add(a);
+		}
+
+	}
+
+}

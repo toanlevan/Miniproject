@@ -1,0 +1,73 @@
+package Bank;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+		//Create bank;
+		String bankName ;
+		String address;
+		int id ;
+		int n;
+		// Create account  and customer for bank 1;
+		List<Account> accounts1 = new ArrayList<Account>();
+		List<Customer> customers1 = new ArrayList<Customer>();
+		Scanner scanner = new Scanner(System.in);
+
+		print("Number Bank: ");
+		n = scanner.nextInt();
+		scanner.reset();
+		List<Bank> banks = new ArrayList<Bank>();
+		for(int i=0; i<n; i++) {
+			print("Bank: "+(i+1));
+			print("Bank name: ");
+			scanner.nextLine();
+			bankName = scanner.nextLine();
+			print("Address: ");
+			address = scanner.nextLine();
+			print("ID: ");
+			id = scanner.nextInt();
+			Bank bank = new Bank(id, bankName, address);
+			banks.add(bank);
+		}
+
+
+		print("Number Customer: ");
+		int nCus = scanner.nextInt();
+		scanner.nextLine();
+		for(int i =0; i<nCus; i++) {
+			print("Customer: "+i+1);
+			print("ID: ");
+			int idCus=scanner.nextInt();
+			scanner.hasNextLine();
+			print("Name: ");
+			String nameCus = scanner.nextLine();
+			print("Address: ");
+			String addressCus = scanner.nextLine();
+			Customer cus = new Customer(idCus,nameCus,addressCus, 0);
+			customers1.add(cus);
+			
+		}
+
+		for(int i=0; i<n; i++) {
+			print(banks.get(i).getBankID()+ " , " +banks.get(i).getName() +" , " + banks.get(i).getLocation());
+		}
+
+
+
+
+	}
+	public static void print(int i) {
+		System.out.println(i);
+	}
+	public static void print(String s) {
+		System.out.println(s);
+	}
+
+}

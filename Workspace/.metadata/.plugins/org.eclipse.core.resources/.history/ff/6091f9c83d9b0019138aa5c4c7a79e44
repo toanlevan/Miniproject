@@ -1,0 +1,26 @@
+package Bank;
+
+public class Account {
+
+	private int accountNo;
+	private int balance;
+	private int customerID;
+	public int getAccountNo() {
+		return accountNo;
+	}
+	public void setAccountNo(int accountNo) {
+		this.accountNo = accountNo;
+	}
+	public int getCustomerID() {
+		return customerID;
+	}
+	public void setCustomerID(int customerID) {
+		this.customerID = customerID;
+	}
+public int getBalance() {
+	 System.out.println("blance: "+ this.balance);
+	 return 0;
+}
+	
+	
+}
