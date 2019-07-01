@@ -59,10 +59,18 @@ public class Customer {
 		
 	}
 	public void depositeMoney(int money) {
-		
+		if(money>0) {
+			this.account.setBalance(account.getBalance() + money);
+		} else {
+			System.out.println("Wrong input data");
+		}
 	}
 	public void withdrawMoney(int money) {
-		
+		if((money>0)&&(money<this.account.getBalance()) ) {
+			this.account.setBalance(account.getBalance() - money);
+		} else {
+			System.out.println("Wrong input data");
+		}
 	}
 
 }

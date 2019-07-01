@@ -15,17 +15,10 @@ public class Bank {
 		this.location = location;
 	}
 	
-	List<Account> accounts;
 	List<Customer> customers;
 
 	public int getBankID() {
 		return bankID;
-	}
-	public List<Account> getAccounts() {
-		return accounts;
-	}
-	public void setAccounts(List<Account> accounts) {
-		this.accounts = accounts;
 	}
 	public List<Customer> getCustomers() {
 		return customers;
@@ -48,5 +41,14 @@ public class Bank {
 	public void setLocation(String location) {
 		this.location = location;
 	}
-
+	
+	public Customer getCustomerFromName(String name) {
+		Customer result = null;
+		for(int i=0;i<this.customers.size(); i++) {
+			if(customers.get(i).getName().equals(name)) {
+				result = customers.get(i);
+			}
+		}
+		return result;
+	}
 }
